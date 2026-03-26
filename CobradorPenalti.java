@@ -11,7 +11,7 @@ public class CobradorPenalti {
         return nome;
     }
 
-    // Método corrigido - NÃO mostra onde chutou
+    
     public String chutar(Scanner scanner) {
         String lado;
         do {
@@ -19,7 +19,7 @@ public class CobradorPenalti {
             lado = scanner.nextLine().toUpperCase().trim();
         } while (!lado.equals("E") && !lado.equals("C") && !lado.equals("D"));
 
-        // NÃO imprime o lado aqui! (essencial para o jogo não revelar)
+        
         return lado;
     }
 }
